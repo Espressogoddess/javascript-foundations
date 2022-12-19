@@ -1,5 +1,3 @@
-const Stark = require("./stark");
-
 class Direwolf {
 
     constructor(creature, homeName, sizeName) {

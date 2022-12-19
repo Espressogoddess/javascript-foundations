@@ -15,7 +15,11 @@ class Stark {
         }
         return 'Winter is Coming';
     }
-    callDirewolf(name, location) {
+    callDirewolf(creature, homeName) {
+        var direwolf = new Direwolf(creature, homeName);
+        direwolf.home = "Riverlands";
+        direwolf.protect(this);
+        return direwolf;
     }
 
 }
