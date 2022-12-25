@@ -2,14 +2,10 @@ class Human {
     constructor(person) {
         this.name = person;
         this.encounterCounter = 0;
+        this.knockedOut = false;
     }
     noticesOgre() {
-        if (this.encounterCounter >=3) {
-            this.encounterCounter = 0;
-            return true;
-        } else {
-            return false;
-        }
+        return this.encounterCounter % 3 === 0 && this.encounterCounter > 0;
     }
 }
 

@@ -43,7 +43,7 @@ describe('Ogre', () => {
     assert.equal(human.noticesOgre(), true);
   });
 
-  it('should reset counter after being noticed', function() {
+  it('should only be noticed after 3 encounters with human', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -72,7 +72,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('', function() {
+  it('should swing when human notices ogre', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -86,7 +86,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it.skip('', function() {
+  it('should knockout a human after 2 swings', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -103,7 +103,7 @@ describe('Ogre', () => {
     assert.equal(human.knockedOut, true);
   });
 
-  it.skip('', function() {
+  it('should wake human after apologizing', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
